@@ -1,88 +1,73 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cuore Mio — Portfólio</title>
-  <meta name="description" content="Cuore Mio — identidade visual e planos criativos para redes sociais." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <img src="assets/logo.png" alt="Cuore Mio logo" class="logo">
-    <div class="hero-content">
-      <p class="subtitle">PORTFÓLIO</p>
-      <h1 class="title">CUORE MIO</h1>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5521979996517&text=Ol%C3%A1%20Mavi%21%20Gostaria%20de%20saber%20mais%20sobre%20seus%20planos." target="_blank" rel="noopener">Contato (WhatsApp)</a>
-        <a class="btn" href="https://www.instagram.com/cuoremio.design/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-    </div>
+  <!-- Cabeçalho -->
+  <header>
+    <h1>Cuore Mio</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#planos">Planos</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section id="sobre" class="sobre container">
-      <div class="sobre-grid">
-        <div class="sobre-left">
-          <img src="assets/hero.png" alt="arte Cuore Mio" class="sobre-img">
-        </div>
-        <div class="sobre-right">
-          <h2 class="accent">prazer, mavi!</h2>
-          <p class="lead">Sou a mente criativa por trás da Cuore Mio! Eu sempre amei o design desde cedo e ele fez parte da minha vida em diversas áreas. Meu objetivo com a Cuore Mio é fazer você se sentir da mesma forma — sentir que a imagem que o seu perfil profissional passa transparece a sua essência de forma clara e acessível.</p>
-          <p>Aqui, eu crio posts que carregam meu estilo e meu cuidado, ajudando você a se conectar de verdade com quem você deseja alcançar.</p>
-        </div>
-      </div>
-    </section>
+  <!-- Seção Sobre -->
+  <section id="sobre" class="sobre">
+    <h2>Sobre</h2>
+    <p>Portfólio minimalista, com identidade visual em azul claro, pensado para transmitir leveza e sofisticação.</p>
+    <button class="btn">Saiba mais</button>
+  </section>
 
-    <section id="planos" class="planos">
-      <div class="container">
-        <h2 class="section-title">Planos e Valores</h2>
+  <!-- Seção Planos -->
+  <section id="planos" class="planos">
+    <div class="plano">
+      <h3>Plano Básico</h3>
+      <p>Portfólio simples</p>
+      <p><strong>R$ 100</strong></p>
+      <button class="btn">Selecionar</button>
+    </div>
+    <div class="plano">
+      <h3>Plano Intermediário</h3>
+      <p>Portfólio com personalização</p>
+      <p><strong>R$ 250</strong></p>
+      <button class="btn">Selecionar</button>
+    </div>
+    <div class="plano">
+      <h3>Plano Premium</h3>
+      <p>Portfólio avançado com suporte</p>
+      <p><strong>R$ 500</strong></p>
+      <button class="btn">Selecionar</button>
+    </div>
+  </section>
 
-        <article class="plano card">
-          <h3 class="plano-title">Plano Vita</h3>
-          <p class="plano-desc">Esse plano é para você que está começando a se posicionar e quer dar os primeiros passos no seu perfil profissional.</p>
-          <div class="price"><span class="amount">R$ 370,00</span><small>Portfólio: +R$ 70</small></div>
-        </article>
+  <!-- Galeria -->
+  <section id="galeria" class="galeria">
+    <h2>Galeria</h2>
+    <div class="imagens">
+      <img src="assets/3.png" alt="Onda no mar">
+      <img src="assets/4.png" alt="Guarda-sóis na praia">
+      <img src="assets/5.png" alt="Pessoa na praia">
+    </div>
+  </section>
 
-        <article class="plano card">
-          <h3 class="plano-title">Plano Amore</h3>
-          <p class="plano-desc">Ideal para quem quer dar um passo à frente, aumentar frequência de posts e fortalecer conexão com o público.</p>
-          <div class="price alt"><span class="amount">R$ 540,00</span><small>Portfólio: +R$ 70</small></div>
-        </article>
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato para mais informações:</p>
+    <button class="btn">Enviar Mensagem</button>
+  </section>
 
-        <article class="plano card">
-          <h3 class="plano-title">Plano Passione</h3>
-          <p class="plano-desc">Plano para quem busca consistência e identidade própria no feed, com posts que refletem seu estilo.</p>
-          <div class="price"><span class="amount">R$ 370,00</span><small>Portfólio: +R$ 70</small></div>
-        </article>
-      </div>
-    </section>
-
-    <section id="pagamento" class="pagamento">
-      <div class="container pagamento-grid">
-        <div>
-          <h2 class="section-title">formas de pagamento</h2>
-          <ol class="payment-list">
-            <li><strong>à vista</strong> — Pagamento do valor total no fechamento do contrato. <em>Desconto de 10%.</em></li>
-            <li><strong>parcelado</strong> — Opções em 2x ou 3x conforme acordado.</li>
-          </ol>
-        </div>
-        <div>
-          <img src="assets/hero.png" alt="praia" class="pag-img">
-        </div>
-      </div>
-    </section>
-
-    <section id="contato" class="contato container">
-      <h2 class="section-title">qual desses planos mais combina com você?</h2>
-      <p class="center">Pronto para começar? <a class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5521979996517&text=Ol%C3%A1%20Mavi%21%20Quero%20contratar%20um%20plano." target="_blank" rel="noopener">Fale no WhatsApp</a></p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© Cuore Mio — <a href="https://www.instagram.com/cuoremio.design/" target="_blank" rel="noopener">@cuoremio.design</a></p>
+  <footer>
+    <p>© 2025 Cuore Mio. Todos os direitos reservados.</p>
   </footer>
 
   <script src="scripts.js"></script>
