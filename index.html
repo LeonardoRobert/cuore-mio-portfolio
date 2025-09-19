@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuore Mio - Portfólio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Cuore Mio Logo">
+    </div>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#planos">Planos</a>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="social">
+      <a href="https://www.instagram.com/cuoremio.design/" target="_blank">
+        <img src="assets/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://wa.me/5521979996517?text=Oi%20Mavi%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20da%20Cuore%20Mio%20%F0%9F%92%99" target="_blank">
+        <img src="assets/whatsapp.svg" alt="WhatsApp">
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('assets/3.png');">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Premier</h1>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="sobre">
+    <h2>No prazer, Mavi</h2>
+    <p>Sou a mente criativa por trás da Cuore Mio! Eu sempre amei o design, desde cedo ele fez parte da minha vida em diversas áreas. Sempre tive contato com a criação, mas nunca tinha criado algo meu, algo que fosse pra mim, sabe? Daí nasceu a Cuore Mio, o lugar onde eu posso desfrutar da minha criatividade de forma livre, mostrando minha essência através disso.</p>
+    <p>Meu objetivo com a Cuore Mio é fazer você se sentir da mesma forma – sentir que a imagem que o seu perfil profissional passa transparece a sua essência de forma clara e acessível.</p>
+    <p>Aqui, eu crio posts que carregam meu estilo e meu cuidado, ajudando você a se conectar de verdade com quem você deseja alcançar.</p>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="planos">
+    <h2>Planos e Valores</h2>
+    <div class="plano">
+      <h3>Plano Vita</h3>
+      <p><strong>Quantidade:</strong> 8 posts</p>
+      <p><strong>Prazo:</strong> 30 dias úteis</p>
+      <button onclick="openModal('vita')">Saiba mais</button>
+    </div>
+    <div class="plano">
+      <h3>Plano Amore</h3>
+      <p><strong>Quantidade:</strong> 12 posts</p>
+      <p><strong>Prazo:</strong> 45 dias úteis</p>
+      <button onclick="openModal('amore')">Saiba mais</button>
+    </div>
+    <div class="plano">
+      <h3>Plano Passione</h3>
+      <p><strong>Quantidade:</strong> 8 posts</p>
+      <p><strong>Prazo:</strong> 30 dias úteis</p>
+      <button onclick="openModal('passione')">Saiba mais</button>
+    </div>
+  </section>
+
+  <!-- Trabalhos -->
+  <section id="trabalhos" class="trabalhos">
+    <h2>Meus Trabalhos</h2>
+    <div class="mosaico">
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+      <div class="tile"></div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo WhatsApp:</p>
+    <a class="whatsapp-btn" href="https://wa.me/5521979996517?text=Oi%20Mavi%2C%20tudo%20bem%3F%20Gostaria%20de%20saber%20mais%20sobre%20os%20seus%20servi%C3%A7os%20da%20Cuore%20Mio%20%F0%9F%92%99" target="_blank">Fale comigo no WhatsApp</a>
+  </section>
+
+  <!-- Modais -->
+  <div id="modal-vita" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('vita')">&times;</span>
+      <h3>Plano Vita</h3>
+      <p>Esse plano é para você que está começando a se posicionar e quer dar os primeiros passos no seu perfil profissional. Com ele, você recebe posts que já refletem o seu estilo e começam a construir sua presença digital de forma consistente e autêntica.</p>
+      <p><strong>Quantidade:</strong> 8 posts (posts únicos e/ou carrosséis)</p>
+      <p><strong>Prazo de entrega:</strong> 30 dias úteis</p>
+      <p><strong>Observação:</strong> se incluir portfólio, +5 dias para produção; entrega dividida em dois posts por semana.</p>
+    </div>
+  </div>
+
+  <div id="modal-amore" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('amore')">&times;</span>
+      <h3>Plano Amore</h3>
+      <p>Esse plano é para você que quer dar um passo à frente no seu perfil profissional. Ele é ideal para quem já começou, mas quer aumentar a frequência de posts e fortalecer a conexão com o público, mantendo um feed organizado e com identidade própria.</p>
+      <p><strong>Quantidade:</strong> 12 posts (posts únicos e/ou carrosséis)</p>
+      <p><strong>Prazo de entrega:</strong> 45 dias úteis</p>
+      <p><strong>Observação:</strong> se incluir portfólio, +5 dias para produção; entrega dividida em dois posts por semana.</p>
+    </div>
+  </div>
+
+  <div id="modal-passione" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('passione')">&times;</span>
+      <h3>Plano Passione</h3>
+      <p>Esse plano é para você que está começando a se posicionar e quer dar os primeiros passos no seu perfil profissional. Com ele, você recebe posts que já refletem o seu estilo e começam a construir sua presença digital de forma consistente e autêntica.</p>
+      <p><strong>Quantidade:</strong> 8 posts (posts únicos e/ou carrosséis)</p>
+      <p><strong>Prazo de entrega:</strong> 30 dias úteis</p>
+      <p><strong>Observação:</strong> se incluir portfólio, +5 dias para produção; entrega dividida em dois posts por semana.</p>
+    </div>
+  </div>
+
+  <!-- Formas de Pagamento -->
+  <section class="pagamento">
+    <h2>Formas de Pagamento</h2>
+    <p><strong>À vista:</strong> pagamento do valor total no fechamento do contrato. Desconto de 10%.</p>
+    <p><strong>Parcelado 2x:</strong> 50% no fechamento do contrato e 50% na metade do prazo de entrega.</p>
+    <p><strong>Parcelado 3x:</strong> 40% no fechamento do contrato, 30% na metade e 30% na entrega final.</p>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
