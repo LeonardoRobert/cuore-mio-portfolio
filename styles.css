@@ -1,0 +1,77 @@
+:root{
+  --a:#809eb0;
+  --b:#a7c2cc;
+  --c:#7595ae;
+  --bg:#ffffff;
+  --text:#21323a;
+  --muted:#6b7f86;
+  --thin:1px;
+  --max:1100px;
+  --radius:8px;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Montserrat,system-ui,Arial,sans-serif;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+
+.container{max-width:1100px;margin:0 auto;padding:0 18px}
+
+/* Header */
+.site-header{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,0.95);border-bottom:1px solid rgba(0,0,0,0.06);z-index:40}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.logo{height:40px}
+.main-nav a{margin:0 10px;text-decoration:none;color:var(--text);font-weight:500}
+.social img{width:28px;height:28px;vertical-align:middle;margin-left:10px}
+
+/* Hero */
+.hero{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;padding-top:70px;background:linear-gradient(180deg, rgba(167,194,204,0.18), rgba(167,194,204,0.08));}
+.hero-inner{padding:60px 18px}
+.badge{display:inline-block;border:var(--thin) solid var(--a);color:var(--a);padding:6px 14px;border-radius:20px;margin-bottom:18px}
+.hero-title{font-family:'Playfair Display',serif;font-size:56px;margin:0;color:var(--text);letter-spacing:2px}
+.hero-sub{color:var(--muted);margin-top:12px}
+
+/* circle buttons */
+.circle-btn{display:inline-block;border:1px solid var(--a);color:var(--a);padding:10px 14px;border-radius:999px;text-decoration:none;margin:6px}
+
+/* Sections */
+.section{padding:80px 0}
+.section-title{font-family:'Playfair Display',serif;font-size:28px;margin:0 0 8px}
+.hr{height:1px;width:140px;margin:12px 0 24px;background:linear-gradient(90deg, transparent, var(--b), transparent)}
+
+/* Plans */
+.plans{display:flex;flex-direction:column;gap:18px}
+.plan-row{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-bottom:var(--thin) solid rgba(0,0,0,0.06)}
+.plan-info h3{margin:0;font-family:'Playfair Display',serif}
+.plan-info p{margin:6px 0;color:var(--muted)}
+.btn-outline{background:transparent;border:1px solid var(--a);color:var(--a);padding:8px 14px;border-radius:20px;cursor:pointer}
+
+/* mosaic placeholders */
+.mosaic{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:120px;gap:12px}
+.placeholder{background:var(--b);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;border:1px dashed rgba(0,0,0,0.06)}
+.placeholder.wide{grid-column:span 3;grid-row:span 1}
+.placeholder.tall{grid-row:span 2}
+.placeholder.small{grid-column:span 2}
+
+/* CTA */
+.cta{display:inline-block;margin-top:12px;padding:10px 18px;border-radius:30px;border:1px solid var(--a);color:var(--a);text-decoration:none}
+
+/* Modal */
+.modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.5);align-items:center;justify-content:center;padding:20px;z-index:60}
+.modal-inner{background:#fff;padding:22px;border-radius:10px;max-width:720px;width:100%;box-shadow:0 10px 40px rgba(0,0,0,0.12)}
+.modal-inner h3{margin-top:0}
+.modal-close{position:absolute;right:18px;top:18px;background:transparent;border:0;font-size:28px;cursor:pointer}
+
+/* footer */
+.site-footer{padding:24px 0;text-align:center;border-top:1px solid rgba(0,0,0,0.06);color:var(--muted)}
+
+/* Responsive */
+@media (max-width:900px){
+  .mosaic{grid-template-columns:repeat(3,1fr);grid-auto-rows:120px}
+  .hero-title{font-size:36px}
+}
+@media (max-width:560px){
+  .mosaic{grid-template-columns:repeat(2,1fr);}
+  .plan-row{flex-direction:column;align-items:flex-start;gap:12px}
+  .main-nav{display:none}
+  .header-inner{padding:10px 12px}
+}
